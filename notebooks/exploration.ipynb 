@@ -1,0 +1,6 @@
+import pandas as pd
+
+df = pd.read_csv("../data/metadata.csv")  # path depends on where you run
+print(df.shape)
+print(df.info())
+print(df.isnull().sum().head(10))
